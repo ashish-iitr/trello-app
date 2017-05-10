@@ -6,7 +6,7 @@ angular.module('myTrello.route', ['ngRoute'])
  */
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/trello', {
-    templateUrl: 'trello/trello.html',
+    templateUrl: 'app/trello/trello.html',
     controller: 'trelloCtrl'
   });
 }]);

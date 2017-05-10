@@ -1,6 +1,6 @@
 
     <div class="container">
-        <ul class="list-unstyled" style="display: inline-flex;margin-left: -10%;" dnd-list="containers" dnd-drop="cardMove(event,index,item,type,external)">
+        <ul class="list-unstyled" style="display: inline-flex;" dnd-list="containers" dnd-drop="cardMove(event,index,item,type,external)">
             <li ng-repeat="(listName, list) in cards.lists" dnd-draggable="containers[0]" dnd-effect-allowed="move" ng-mousedown="checkSrcCard(listName)">
                 <section class="list">
                     <header>Task {{listName}} {{'('+list.length+')'}}</header>
